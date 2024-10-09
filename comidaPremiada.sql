@@ -17,7 +17,6 @@ CREATE TABLE participantes_premiacoes (
     valor_com_taxa NUMERIC(10, 2)
 );
 
--- Inserindo os dados
 INSERT INTO participantes_premiacoes (
     periodo, grupo, filial, cnpj_filial, razao_social, categoria_participante, cargo_participante, nome_participante, meta, realizado, meta_atingida, valor_por_bateria, valor_premiacao, valor_com_taxa
 ) VALUES
