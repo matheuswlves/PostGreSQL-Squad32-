@@ -1,0 +1,78 @@
+﻿CREATE TABLE participantes_premiacoes_colocacao (
+    id SERIAL PRIMARY KEY,                   -- - Destaque corporativo
+    periodo VARCHAR(20),                     -- - Destaque corporativo
+    grupo VARCHAR(50),                       -- - Destaque corporativo
+    filial VARCHAR(100),                     -- - Destaque corporativo
+    categoria_participante VARCHAR(50),      -- - Destaque corporativo
+    colocacao VARCHAR(10),                   -- - Destaque corporativo
+    nome_participante VARCHAR(100),          -- - Destaque corporativo
+    valor_premiacao NUMERIC(10, 2),         -- - Destaque corporativo
+    valor_com_taxa NUMERIC(10, 2)            -- - Destaque corporativo
+);
+
+
+CREATE TABLE participantes_premiacoes_trimestrais (
+    id SERIAL PRIMARY KEY,                   -- - Melhores Empresas
+    periodo VARCHAR(20),                     -- - Melhores Empresas
+    grupo VARCHAR(50),                       -- - Melhores Empresas
+    filial VARCHAR(100),                     -- - Melhores Empresas
+    cnpj_filial VARCHAR(20),                 -- - Melhores Empresas
+    razao_social VARCHAR(100),               -- - Melhores Empresas
+    nome_participante VARCHAR(100),          -- - Melhores Empresas
+    meta INTEGER,                            -- - Melhores Empresas
+    realizado INTEGER,                       -- - Melhores Empresas
+    meta_atingida VARCHAR(5),                -- - Melhores Empresas
+    positivou VARCHAR(5),                    -- - Melhores Empresas
+    faixa_premiacao VARCHAR(50),             -- - Melhores Empresas
+    valor_premiacao NUMERIC(10, 2),         -- - Melhores Empresas
+    valor_com_taxa NUMERIC(10, 2)            -- - Melhores Empresas
+);
+
+
+CREATE TABLE participantes_premiacoes (
+    id SERIAL PRIMARY KEY,                   -- - Comida Premiada
+    periodo VARCHAR(20),                     -- - Comida Premiada
+    grupo VARCHAR(50),                       -- - Comida Premiada
+    filial VARCHAR(100),                     -- - Comida Premiada
+    cnpj_filial VARCHAR(20),                 -- - Comida Premiada
+    razao_social VARCHAR(100),               -- - Comida Premiada
+    categoria_participante VARCHAR(50),      -- - Comida Premiada
+    cargo_participante VARCHAR(50),          -- - Comida Premiada
+    nome_participante VARCHAR(100),          -- - Comida Premiada
+    meta INTEGER,                            -- - Comida Premiada
+    realizado INTEGER,                       -- - Comida Premiada
+    meta_atingida VARCHAR(5),                -- - Comida Premiada
+    valor_por_bateria NUMERIC(10, 2),       -- - Comida Premiada
+    valor_premiacao NUMERIC(10, 2),         -- - Comida Premiada
+    valor_com_taxa NUMERIC(10, 2)            -- - Comida Premiada
+);
+
+
+CREATE TABLE participantes_premiacoes_destaques (
+    id SERIAL PRIMARY KEY,                   -- - Destaque
+    periodo VARCHAR(20),                     -- - Destaque
+    grupo VARCHAR(50),                       -- - Destaque
+    filial VARCHAR(100),                     -- - Destaque
+    categoria_participante VARCHAR(50),      -- - Destaque
+    nome_participante VARCHAR(100),          -- - Destaque
+    valor_premiacao NUMERIC(10, 2),         -- - Destaque
+    valor_com_taxa NUMERIC(10, 2)            -- - Destaque
+);
+
+
+CREATE TABLE participantes_premiacoes_vendas (
+    id SERIAL PRIMARY KEY,                   -- - Vendas
+    periodo VARCHAR(20),                     -- - Vendas
+    grupo VARCHAR(50),                       -- - Vendas
+    filial VARCHAR(100),                     -- - Vendas
+    cargo_participante VARCHAR(50),          -- - Vendas
+    nome_participante VARCHAR(100),          -- - Vendas
+    meta_volume INTEGER,                     -- - Vendas
+    real_volume INTEGER,                     -- - Vendas
+    meta_volume_atingida VARCHAR(5),        -- - Vendas
+    meta_positivacao INTEGER,                -- - Vendas
+    real_positivacao INTEGER,                -- - Vendas
+    meta_positivacao_atingida VARCHAR(5),   -- - Vendas
+    valor_premiacao NUMERIC(10, 2),         -- - Vendas
+    valor_com_taxa NUMERIC(10, 2)            -- - Vendas
+);
